@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Consultant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="current-interior-btn"><p>This Interior</p></div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="main-content">
-            <h1>Modern interior</h1>
-            <p class="descritpion">
-                A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
-            </p>
-            <p class="read-more">Read more &rarr;</p>
-            
-        </div>
-        <div class="main-img">
-            <img src="/images/photo1.png" alt="">
-            <div class="designer">
-                <div class="upper">
-                    <div class="designer-img">
-                        <img src="./images/photo2.png" alt="">
+    <div id="mobile-nav" class="mobile-nav">
+        <a class="mobile-navigation-item item-active" href="#">Home</a>
+        <a class="mobile-navigation-item" href="#">Collection</a>
+        <a class="mobile-navigation-item" href="#">About</a>
+        <a class="mobile-navigation-item" href="#">Contact</a>
+    </div>
+    <div id="container">
+        <header>
+            <button class="current-interior-btn">This Interior</button>
+            <nav class="navigation">
+                <a class="navigation-item item-active" href="#">Home</a>
+                <a class="navigation-item" href="#">Collection</a>
+                <a class="navigation-item" href="#">About</a>
+                <a class="navigation-item" href="#">Contact</a>
+            </nav>
+            <div href="" class="toggle-button" id="toggle-button">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <h1>Modern interior</h1>
+                <p class="descritpion">
+                    A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+                </p>
+                <p class="read-more">Read more &rarr;</p>
+                
+            </div>
+            <div class="main-img">
+                <img class="design-img" src="/images/photo1.png" alt="">
+                <div class="designer">
+                    <div class="upper">
+                        <div class="designer-img">
+                            <img class="designer-pic" src="./images/photo2.png" alt="">
+                        </div>
+                        <div class="designer-info">
+                            <h3>Alizia Webber</h3>
+                            <p class="job">Interior designer</p>
+                        </div>
                     </div>
-                    <div class="designer-info">
-                        <h3>Alizia Webber</h3>
-                        <p class="job">Interior designer</p>
+                    <div class="lower">
+                        <h2>Designed in 2020 by <br />Alizia Webber</h2>
                     </div>
-                </div>
-                <div class="lower">
-                    <h2>Designed in 2020 by Alizia Webber</h2>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <span>Alex R. Farnes </span><a href="http://devchallenges.io" target="_blank">@ Devchallenges.io</a>
-    </footer>
+        </main>
+        <footer>
+            <span>Alex R. Farnes </span><a href="http://devchallenges.io" target="_blank">@ Devchallenges.io</a>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
