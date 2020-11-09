@@ -17,12 +17,13 @@ body {
   background: #181719;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 #container {
   margin: 0 auto;
   max-width: 1400px;
-  padding: 24px;
+  padding: 24px 30px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
@@ -83,7 +84,6 @@ main {
 
 .main-content {
   align-self: start;
-  padding-top: 50px;
 }
 
 .main-content h1 {
@@ -234,6 +234,7 @@ footer a:hover {
   text-decoration: none;
   color: white;
   margin: 40px;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 660px) {
@@ -273,5 +274,16 @@ footer a:hover {
 
   .toggle-button {
     display: flex;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
